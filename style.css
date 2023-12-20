@@ -1,0 +1,183 @@
+@font-face {
+    font-family: Audiowide;
+    src: url(assets/font/Audiowide-Regular.ttf);
+}
+
+@font-face {
+    font-family: Inter;
+    src: url(assets/font/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background: #101313;
+    color: #ffffff;
+    font-family: "Inter";
+    position: relative;
+    z-index: 1;
+}
+
+.header-nav {
+    color: white;
+    background-color: #101313;
+}
+
+.navbar-link {
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navbar-link:hover {
+    color: #53d6c5;
+}
+
+.navbar-btn {
+    background: transparent;
+    outline: none;
+    border: 1px solid #53D6C5;
+    border-radius: 3px;
+    color: white;
+    padding: 13px 32px;
+    line-height: 24px;
+    transition: all 0.2s;
+    font-weight: 600;
+}
+
+.navbar-btn:hover {
+    cursor: pointer;
+    background: linear-gradient(45.92deg, #117C6F 15.48%, #B2F0E8 86.2%);
+
+}
+
+.main-home {
+    margin: auto;
+    overflow: hidden;
+    padding-top: 160px;
+}
+
+.main-head {
+    line-height: 350%;
+
+}
+
+.head-white {
+    font-family: Audiowide;
+    font-size: 65px;
+}
+
+.head-gradiant {
+    font-family: Audiowide;
+    font-size: 65px;
+    background: linear-gradient(21.92deg, #53D6C5 58.48%, #FFFFFF 106.2%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.head-para {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 60px 0 0;
+}
+
+.head-para::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, #48E6D8 0%, rgba(72, 230, 216, 0) 100%);
+    margin: 50px auto 0;
+    opacity: 0.2;
+}
+
+.head-sub-para {
+    color: #345a57;
+}
+
+.head-btn {
+    padding: 15px 45px;
+    border-radius: 3px;
+    background: linear-gradient(45.92deg, #117C6F 15.48%, #B2F0E8 86.2%), #C4C4C4;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: larger;
+    color: #FFFFFF;
+    transition: all 0.3s;
+}
+.head-btn:hover {
+    background: linear-gradient(225.02deg, #117C6F 0%, #B2F0E8 100%);
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width:990px) {
+    .main-head {
+        line-height: 65px;
+        text-align: center;
+    }
+
+    .head-sub-para {
+        text-align: center;
+        color: #345a57;
+    }
+
+    .head-para {
+        font-size: 20px;
+        margin: 10px 0 0;
+        text-align: center;
+    }
+
+    .head-white,
+    .head-gradiant {
+        font-size: 50px;
+        line-height: 30px;
+    }
+
+    .head-btn {
+        margin: auto;
+    }
+}
+
+@media (max-width:767px) {
+    .main-home {
+        margin: auto;
+        overflow: hidden;
+        padding-top: 30px
+    }
+
+    .head-white,
+    .head-gradiant {
+        font-size: 50px;
+        line-height: 30px;
+    }
+
+}
+
+@media (max-width:325px) {
+    .main-head {
+        line-height: 5px;
+        text-align: center;
+    }
+
+    .head-white,
+    .head-gradiant {
+        font-size: 26px;
+        line-height: 30px;
+    }
+
+}
